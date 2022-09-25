@@ -1,0 +1,285 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+   margin: 0;
+   font-size: 100%;
+   font-weight: normal;
+}
+.wrapper {
+   max-width: 1640px;
+   margin: 0 130px 0 130px;
+   
+}
+.container{
+   width: 100%;
+   display: flex;
+};
+.header{
+   height: 43px;
+   margin-top: 31px;
+   margin-bottom: 34px;
+   align-items: center;
+   justify-content: space-around;
+   &__logo{
+      height: 51px;
+      width: 57px;
+      background-image: url( '../img/logom1.jpg');
+      background-repeat:no-repeat;
+      background-size: contain;
+   }
+   &__navigation{
+      display: flex;
+      &-item{
+         white-space:nowrap;
+         margin-left: 35px;
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 15px;
+         line-height: 18px;
+         color: #AAAAAA;
+         &:hover{
+            color: #01678A;
+            cursor: pointer;
+         }
+      }
+   }
+   &__information{
+      display: flex;
+      align-items: center;
+      margin: 0 45px 0 45px;
+      &-item{
+         display: flex;
+         align-items: center;
+         margin-left: 45px;
+         &-img{
+            margin-right: 15px;
+         }
+         
+         &-img2{
+            margin-right: 9px;
+         }
+            
+         p{
+            white-space:nowrap;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+         }
+         &-p{
+            font-family: 'Arial';
+            line-height: 17px;
+            align-items: center;
+            color: #474747;
+         }
+         &-p1{
+            margin-left: 11px;
+            font-family: 'Panton';
+            line-height: 18px;
+            text-align: right;
+            color: #12354B;
+            &.color{
+               color: #919191;
+            }
+         }
+         &-p2{
+            font-family: 'Panton';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #3C3C3C;
+         }
+
+      }
+   }
+   &__button{
+      min-width: 185.68px;
+      height: 41.2px; 
+      background: #38BCEA;
+      border-radius: 3px; 
+      display: flex;
+      align-items: center;
+      justify-content : center;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+      &:hover{
+         cursor: pointer;
+         outline: 1px solid rgb(30, 58, 217);
+      }      
+   }
+}
+
+.s1{
+   height: 629px;
+   width: 100%;
+   background-image: url( '../img/nurse-girl 1.png');
+   background-repeat:no-repeat;
+   background-size: contain;
+   &__block{
+      width: 820px;
+      height: 629px;
+      background: linear-gradient(90deg, #FFFFFF 48.07%, rgba(255, 255, 255, 0) 100%);
+      &-slogan{
+         margin-top: 147px;
+         width: 420px;
+         p{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: #4E4E4E;
+         }
+         h1{
+            font-family: 'Panton';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 104.19%;
+            color: #1A3444;
+            margin: 20px 0 20px 0;
+         }
+         &-button{
+            margin-top: 37px;
+            width: 295.86px;
+            height: 60.27px;
+            background: #38BCEA;
+            box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            &:hover{
+               cursor: pointer;
+               outline: 1px solid rgb(30, 58, 217);
+            }  
+         }
+      }
+      
+   }
+}
+
+.s2{
+   display: block;
+   height: 938px;
+   &__block{
+      width: 390px;
+      h2{
+         font-family: 'Panton';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 48px;
+         line-height: 104.19%;
+         color: #1A3444;
+         margin: 20px 0 20px 0;
+      }
+      p{
+         font-family: 'Arial';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 23px;
+         color: #4E4E4E;
+      }
+   }
+   &__services{
+      margin-top: 69px;
+      display: flex;
+      justify-content: space-around;
+      &-item{
+         width: 298px;
+         height: 237px;
+         background: #FBFBFB;
+         border-radius: 5px;
+         overflow:hidden;
+         &-block{
+            display: flex;
+            height: 237px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease-out ;
+            p{
+               font-family: 'Panton';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 26px;
+               line-height: 32px;
+               text-align: center;
+               color: #454545;
+            }
+         }
+         &-panel{
+            height: 48px;
+            width: 100%;
+            background-color: #FCFCFC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &-s{
+               height: 8px;
+               width: 8px;
+               border-left: 2px solid #38BCEA;
+               border-bottom: 2px solid #38BCEA;
+               transform: rotate(-45deg);
+            }
+         }
+         &:hover &-block{
+               background-color: #38BCEA;
+               height: 189px;
+               p{
+                  color: #FFFFFF;
+               }
+         }
+         &:hover {
+            cursor: pointer;
+         }
+         
+      }
+   }
+}
+
+.s3{
+   height: 700px;
+   background-color: #FBFBFB;
+   &_w{
+      background-color: #FBFBFB;  
+   }
+   h2{
+      margin-top: 124px;
+      margin-bottom: 60px;
+      font-family: 'Panton';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      color: #272727;
+   }
+   &__services{
+      display: flex;
+      justify-content: space-between;
+      &-item{
+         width: 525.41px;
+         height: 334.17px;
+         background: #FFFFFF;
+         border-radius: 4px;
+      }
+   }
+}
