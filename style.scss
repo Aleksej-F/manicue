@@ -228,11 +228,13 @@ a {
          &-panel{
             height: 48px;
             width: 100%;
-            background-color: #FCFCFC;
+            background-color: #fcfcfc;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            &:hover{
+               background-color: #bbb7b7;
+            }
             &-s{
                height: 8px;
                width: 8px;

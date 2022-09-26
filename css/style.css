@@ -229,10 +229,13 @@ a {
 .s2__services-item-panel {
   height: 48px;
   width: 100%;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.s2__services-item-panel:hover {
+  background-color: #bbb7b7;
 }
 .s2__services-item-panel-s {
   height: 8px;
