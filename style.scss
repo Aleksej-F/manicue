@@ -11,7 +11,7 @@ a {
 }
 .wrapper {
    max-width: 1640px;
-   margin: 0 130px 0 130px;
+   margin: 0 auto 0 auto;
    
 }
 .container{
@@ -259,7 +259,8 @@ a {
 }
 
 .s3{
-   height: 700px;
+   min-height: 700px;
+   width: 1640px;
    background-color: #FBFBFB;
    &_w{
       background-color: #FBFBFB;  
@@ -275,13 +276,109 @@ a {
       color: #272727;
    }
    &__services{
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap ;
       &-item{
-         width: 525.41px;
-         height: 334.17px;
+         width: 450px;
+         height: 218px;
          background: #FFFFFF;
          border-radius: 4px;
+         margin: 10px;
+         padding:58px 37px;
+      h2 {
+         margin: 0;
+         font-family: 'Panton';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 48px;
+         line-height: 58px;
+         color: #38BCEA;
       }
+      h3 {
+         font-family: 'Panton';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 36px;
+         line-height: 44px;
+         color: #222222;
+         margin: 10px 0;
+      }
+      p{
+         font-family: 'Arial';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 24px;
+         line-height: 28px;
+         color: #292929;
+      }
+      }
+   }
+}
+
+.s4{
+   height: 900px;
+   
+   h2{
+      font-family: 'Panton';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      color: #12354B;
+      margin: 93px 0;
+   }
+   &__slider{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      position: relative;
+      &-item{
+         height: 375px;
+         width: 537px;
+         margin: 10px;
+         background-size: contain;
+         background-repeat: no-repeat;         ;
+         &:nth-child(2){
+            background-image: url( '../img/sertiv.jpg');;
+         }
+         &:nth-child(3){
+            background-image: url( '../img/sertiv.jpg');;
+         }
+         &:nth-child(4){
+            background-image: url( '../img/sertiv.jpg');;
+         }
+      }
+      &-navigation{
+         position: absolute;
+         height: 56px;
+         width: 56px;
+         border: 2px solid #2E3A59;
+         border-radius: 28px;
+         top: 180px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         &:first-child{
+            left: -60px;
+            transform: rotate(45deg);
+         }
+         &:last-child{
+            right: -60px;
+            transform: rotate(-135deg);
+         }
+         &-s{
+            height: 8px;
+            width: 8px;
+            border-left: 2px solid #2E3A59;
+            border-bottom: 2px solid #2E3A59;
+            
+         }
+         &:hover{
+            background-color: #ecf2ff;
+         }
+      }
+      
    }
 }
