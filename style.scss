@@ -9,21 +9,37 @@ a {
    font-size: 100%;
    font-weight: normal;
 }
+$point1: 1300px;
+$width_wrap_point1: 1200px;
 .wrapper {
    max-width: 1640px;
    margin: 0 auto 0 auto;
-   
+   @media (max-width: $point1) {
+      max-width: $width_wrap_point1;
+   }
 }
+.head_fixed{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgb(218, 215, 215);
+}
+
 .container{
    width: 100%;
    display: flex;
 };
 .header{
+   width: 1640px;
    height: 43px;
-   margin-top: 31px;
-   margin-bottom: 34px;
+   padding: 31px 0;
+   display: flex;
    align-items: center;
    justify-content: space-around;
+   @media (max-width: $point1) {
+      width: $width_wrap_point1;
+   }
    &__logo{
       height: 51px;
       width: 57px;
@@ -33,6 +49,9 @@ a {
    }
    &__navigation{
       display: flex;
+      a {
+         text-decoration: none;
+      }
       &-item{
          white-space:nowrap;
          margin-left: 35px;
@@ -123,15 +142,17 @@ a {
    width: 100%;
    background-image: url( '../img/nurse-girl 1.png');
    background-repeat:no-repeat;
-   background-size: contain;
+   background-size: cover;
+   background-position: right top;
    &__block{
       width: 820px;
       height: 629px;
       background: linear-gradient(90deg, #FFFFFF 48.07%, rgba(255, 255, 255, 0) 100%);
       &-slogan{
-         margin-top: 147px;
+         margin-top: 120px;
          width: 420px;
          p{
+            width: 800px;
             font-family: 'Arial';
             font-style: normal;
             font-weight: 400;
@@ -176,7 +197,9 @@ a {
 
 .s2{
    display: block;
-   height: 938px;
+   min-height: 938px;
+   padding-top: 108px;
+   padding-bottom: 30px;
    &__block{
       width: 390px;
       h2{
@@ -198,15 +221,17 @@ a {
       }
    }
    &__services{
-      margin-top: 69px;
+      margin-top: 30px;
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       &-item{
          width: 298px;
          height: 237px;
          background: #FBFBFB;
          border-radius: 5px;
          overflow:hidden;
+         margin-top: 30px;
          &-block{
             display: flex;
             height: 237px;
@@ -229,9 +254,11 @@ a {
             height: 48px;
             width: 100%;
             background-color: #fcfcfc;
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             &:hover{
                background-color: #bbb7b7;
             }
@@ -262,6 +289,9 @@ a {
    min-height: 700px;
    width: 1640px;
    background-color: #FBFBFB;
+   @media (max-width: $point1) {
+      width: $width_wrap_point1;
+   }
    &_w{
       background-color: #FBFBFB;  
    }
@@ -280,6 +310,7 @@ a {
       display: flex;
       justify-content: center;
       flex-wrap: wrap ;
+      margin-bottom: 20px;
       &-item{
          width: 450px;
          height: 218px;
@@ -287,6 +318,10 @@ a {
          border-radius: 4px;
          margin: 10px;
          padding:58px 37px;
+         @media (max-width: $point1) {
+            width: 300px;
+            height: 280px;
+         }    
       h2 {
          margin: 0;
          font-family: 'Panton';
@@ -319,7 +354,10 @@ a {
 
 .s4{
    height: 900px;
-   
+   @media (max-width: $point1) {
+      max-width: 1000px;
+      height: 600px;
+   }
    h2{
       font-family: 'Panton';
       font-style: normal;
@@ -334,19 +372,27 @@ a {
       width: 100%;
       justify-content: center;
       position: relative;
+      &-window{
+         display: flex;
+      }
       &-item{
          height: 375px;
          width: 537px;
+         flex: 1;
          margin: 10px;
          background-size: contain;
-         background-repeat: no-repeat;         ;
+         background-repeat: no-repeat;   
+         @media (max-width: $point1) {
+            width: 300px;
+            height: 215px;
+         }      
+         &:nth-child(1){
+            background-image: url( '../img/sertiv.jpg');;
+         }
          &:nth-child(2){
             background-image: url( '../img/sertiv.jpg');;
          }
          &:nth-child(3){
-            background-image: url( '../img/sertiv.jpg');;
-         }
-         &:nth-child(4){
             background-image: url( '../img/sertiv.jpg');;
          }
       }
@@ -360,6 +406,9 @@ a {
          display: flex;
          justify-content: center;
          align-items: center;
+         @media (max-width: $point1) {
+            top: 89px;
+         }  
          &:first-child{
             left: -60px;
             transform: rotate(45deg);
@@ -377,6 +426,7 @@ a {
          }
          &:hover{
             background-color: #ecf2ff;
+            cursor:pointer ;
          }
       }
       

@@ -14,6 +14,19 @@ a {
   max-width: 1640px;
   margin: 0 auto 0 auto;
 }
+@media (max-width: 1300px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+}
+
+.head_fixed {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgb(218, 215, 215);
+}
 
 .container {
   width: 100%;
@@ -21,11 +34,17 @@ a {
 }
 
 .header {
+  width: 1640px;
   height: 43px;
-  margin-top: 31px;
-  margin-bottom: 34px;
+  padding: 31px 0;
+  display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media (max-width: 1300px) {
+  .header {
+    width: 1200px;
+  }
 }
 .header__logo {
   height: 51px;
@@ -36,6 +55,9 @@ a {
 }
 .header__navigation {
   display: flex;
+}
+.header__navigation a {
+  text-decoration: none;
 }
 .header__navigation-item {
   white-space: nowrap;
@@ -122,7 +144,8 @@ a {
   width: 100%;
   background-image: url("../img/nurse-girl 1.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: right top;
 }
 .s1__block {
   width: 820px;
@@ -130,10 +153,11 @@ a {
   background: linear-gradient(90deg, #FFFFFF 48.07%, rgba(255, 255, 255, 0) 100%);
 }
 .s1__block-slogan {
-  margin-top: 147px;
+  margin-top: 120px;
   width: 420px;
 }
 .s1__block-slogan p {
+  width: 800px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -174,7 +198,9 @@ a {
 
 .s2 {
   display: block;
-  height: 938px;
+  min-height: 938px;
+  padding-top: 108px;
+  padding-bottom: 30px;
 }
 .s2__block {
   width: 390px;
@@ -197,9 +223,10 @@ a {
   color: #4E4E4E;
 }
 .s2__services {
-  margin-top: 69px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .s2__services-item {
   width: 298px;
@@ -207,6 +234,7 @@ a {
   background: #FBFBFB;
   border-radius: 5px;
   overflow: hidden;
+  margin-top: 30px;
 }
 .s2__services-item-block {
   display: flex;
@@ -230,9 +258,11 @@ a {
   height: 48px;
   width: 100%;
   background-color: #fcfcfc;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .s2__services-item-panel:hover {
   background-color: #bbb7b7;
@@ -260,6 +290,11 @@ a {
   width: 1640px;
   background-color: #FBFBFB;
 }
+@media (max-width: 1300px) {
+  .s3 {
+    width: 1200px;
+  }
+}
 .s3_w {
   background-color: #FBFBFB;
 }
@@ -278,6 +313,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .s3__services-item {
   width: 450px;
@@ -286,6 +322,12 @@ a {
   border-radius: 4px;
   margin: 10px;
   padding: 58px 37px;
+}
+@media (max-width: 1300px) {
+  .s3__services-item {
+    width: 300px;
+    height: 280px;
+  }
 }
 .s3__services-item h2 {
   margin: 0;
@@ -317,6 +359,12 @@ a {
 .s4 {
   height: 900px;
 }
+@media (max-width: 1300px) {
+  .s4 {
+    max-width: 1000px;
+    height: 600px;
+  }
+}
 .s4 h2 {
   font-family: "Panton";
   font-style: normal;
@@ -332,20 +380,30 @@ a {
   justify-content: center;
   position: relative;
 }
+.s4__slider-window {
+  display: flex;
+}
 .s4__slider-item {
   height: 375px;
   width: 537px;
+  flex: 1;
   margin: 10px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (max-width: 1300px) {
+  .s4__slider-item {
+    width: 300px;
+    height: 215px;
+  }
+}
+.s4__slider-item:nth-child(1) {
+  background-image: url("../img/sertiv.jpg");
 }
 .s4__slider-item:nth-child(2) {
   background-image: url("../img/sertiv.jpg");
 }
 .s4__slider-item:nth-child(3) {
-  background-image: url("../img/sertiv.jpg");
-}
-.s4__slider-item:nth-child(4) {
   background-image: url("../img/sertiv.jpg");
 }
 .s4__slider-navigation {
@@ -358,6 +416,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1300px) {
+  .s4__slider-navigation {
+    top: 89px;
+  }
 }
 .s4__slider-navigation:first-child {
   left: -60px;
@@ -375,4 +438,5 @@ a {
 }
 .s4__slider-navigation:hover {
   background-color: #ecf2ff;
+  cursor: pointer;
 }
